@@ -52,9 +52,9 @@
         </div>
     </nav>
     <!-- left and right portion container -->
-    <section class="mt-2 p-4 rounded-md flex w-full">
+    <section class="mt-2 p-4 rounded-md flex w-full justify-between">
         <!-- left container -->
-        <section class="w-[80%] bg-white">
+        <section class="w-[80%] bg-white rounded-md">
             <!-- main board container -->
             <div class="grid grid-cols-4 rounded-md gap-x-2 col-span-3 p-3">
                 <!-- assigned container -->
@@ -65,7 +65,7 @@
                     </div>
                     <div class="flex flex-col justify-center items-center">
                         <p class="text-center ">Task Assigned</p>
-                        <p class="font-bold" id="task_count">05</p>
+                        <p class="font-bold" id="task_count">6</p>
                     </div>
                     <!-- number = tasks completed in total -->
                 </div>
@@ -98,11 +98,11 @@
             <!-- Task list container -->
             <div class="grid grid-cols-3 bg-white mt-10 p-3 gap-y-4 gap-x-5 ">
                 <!-- card 1 -->
-                <div class="p-4 rounded-md bg-blue-50 gap-y-2 ">
+                <div class="p-4 rounded-md bg-blue-50 gap-y-2 flex flex-col justify-between">
                     <!-- textual info container -->
                     <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-2 border-dashed">
                         <h3 class="bg-white rounded-md  btn w-min font-medium">ShopEase</h3>
-                        <h1 class="font-bold text-xl ">Fix Mobile Button Issue</h1>
+                        <h1 class="font-bold text-xl " id="task_title">Fix Mobile Button Issue</h1>
                         <p class="bg-white rounded-md p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works    properly
                         </p>
                     </div>
@@ -119,12 +119,12 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="p-4 rounded-md bg-blue-50 gap-y-2 ">
+                <div class="p-4 rounded-md bg-blue-50 gap-y-2 flex flex-col justify-between">
                     <!-- textual info container -->
                     <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-2 border-dashed">
                         <h3 class="bg-white rounded-md  btn w-min font-medium">SwiftPAY</h3>
-                        <h1 class="font-bold text-xl ">Optimize Home Page</h1>
-                        <p class="bg-white rounded-md p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works    properly
+                        <h1 class="font-bold text-xl " id="task_title">Optimize Home Page</h1>
+                        <p class="bg-white rounded-md p-2">Fix the Home page Reload issue and text disappearance
                         </p>
                     </div>
                     <!-- deadline and button container -->
@@ -140,12 +140,12 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="p-4 rounded-md bg-blue-50 gap-y-2 ">
+                <div class="p-4 rounded-md bg-blue-50 gap-y-2 flex flex-col justify-between">
                     <!-- textual info container -->
                     <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-2 border-dashed">
-                        <h3 class="bg-white rounded-md  btn w-min font-medium">CloudSYNC</h3>
-                        <h1 class="font-bold text-xl ">Add Dark Mode</h1>
-                        <p class="bg-white rounded-md p-2">Store the users preference and make dark mode available
+                        <h3 class="bg-white rounded-md  btn w-min font-medium">Meta</h3>
+                        <h1 class="font-bold text-xl " id="task_title">Add New Emoji</h1>
+                        <p class="bg-white rounded-md p-2">Add a facial Expression that says happy,sad,confused at the same time
                         </p>
                     </div>
                     <!-- deadline and button container -->
@@ -160,13 +160,34 @@
                         </button>
                     </div>
                 </div>
-                <!-- card 1 -->
-                <div class="p-4 rounded-md bg-blue-50 gap-y-2 ">
+                <!-- card 4 -->
+                <div class="p-4 rounded-md bg-blue-50 gap-y-2 flex flex-col justify-between">
                     <!-- textual info container -->
                     <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-2 border-dashed">
-                        <h3 class="bg-white rounded-md  btn w-min font-medium">ShopEase</h3>
-                        <h1 class="font-bold text-xl ">Fix Mobile Button Issue</h1>
-                        <p class="bg-white rounded-md p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works    properly
+                        <h3 class="bg-white rounded-md  btn w-min font-medium">Google </h3>
+                        <h1 class="font-bold text-xl " id="task_title">Fix The settings issue</h1>
+                        <p class="bg-white rounded-md p-2">Fix multiple profile connection issue from settings
+                        </p>
+                    </div>
+                    <!-- deadline and button container -->
+                    <div class="flex justify-between items-center">
+                        <!-- Deadline Container  -->
+                        <div class="flex flex-col gap-y-1">
+                            <p>Deadline</p>
+                            <p class="font-semibold">21 March 2025</p>
+                        </div>
+                        <button class="completed_btn btn logo-color text-white mr-2 " >
+                            Completed
+                        </button>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="p-4 rounded-md bg-blue-50 gap-y-2 flex flex-col justify-between">
+                    <!-- textual info container -->
+                    <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-2 border-dashed">
+                        <h3 class="bg-white rounded-md  btn w-min font-medium">Optimizely</h3>
+                        <h1 class="font-bold text-xl " id="task_title">Fix Gemini Issue</h1>
+                        <p class="bg-white rounded-md p-2">Gemini responses stop unexpectedly
                         </p>
                     </div>
                     <!-- deadline and button container -->
@@ -181,34 +202,13 @@
                         </button>
                     </div>
                 </div>
-                <!-- card 1 -->
-                <div class="p-4 rounded-md bg-blue-50 gap-y-2 ">
-                    <!-- textual info container -->
-                    <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-2 border-dashed">
-                        <h3 class="bg-white rounded-md  btn w-min font-medium">ShopEase</h3>
-                        <h1 class="font-bold text-xl ">Fix Mobile Button Issue</h1>
-                        <p class="bg-white rounded-md p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works    properly
-                        </p>
-                    </div>
-                    <!-- deadline and button container -->
-                    <div class="flex justify-between items-center">
-                        <!-- Deadline Container  -->
-                        <div class="flex flex-col gap-y-1">
-                            <p>Deadline</p>
-                            <p class="font-semibold">21 March 2025</p>
-                        </div>
-                        <button class="completed_btn btn logo-color text-white mr-2">
-                            Completed
-                        </button>
-                    </div>
-                </div>
-                <!-- card 1 -->
-                <div class="p-4 rounded-md bg-blue-50 gap-y-2 ">
+                <!-- card 6 -->
+                <div class="p-4 rounded-md bg-blue-50 gap-y-2 flex flex-col justify-between">
                     <!-- textual info container -->
                     <div class="flex flex-col p-2 gap-y-2 border-[#9BA8F8] border-b-[1px] border-dashed">
-                        <h3 class="bg-white rounded-md  btn w-min font-medium">ShopEase</h3>
-                        <h1 class="font-bold text-xl ">Fix Mobile Button Issue</h1>
-                        <p class="bg-white rounded-md p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works    properly
+                        <h3 class="bg-white rounded-md  btn w-min font-medium">GlassDoor</h3>
+                        <h1 class="font-bold text-xl " id="task_title">Improve Job Searching</h1>
+                        <p class="bg-white rounded-md p-2">Job suggesstions are becoming too random.
                         </p>
                     </div>
                     <!-- deadline and button container -->
@@ -242,14 +242,17 @@
             </div>
 
             <!-- log container -->
-            <div class="" id="log_container">
-                <p class="bg-blue-50 px-2 py-3 rounded-xl">You Have completed The Task Dark mode at 12:48 PM </p>
+            <div class="flex flex-col " id="log_container">
+                
             </div>
         </section>
 
     </section>
 
     <script src="date.js"></script>
+    <script src="bg_button.js"></script>
+    <script src="utilities/helper_functions.js"></script>
+    <script src="card_button_handler.js"></script>
 </body>
 
 </html>
